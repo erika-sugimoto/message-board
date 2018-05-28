@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::resource('messages', 'MessagesController');{
+// return view('welcome');
+//};
+// copy function (button)
+//Route::get('messages/{id}/copy', 'MessagesController@copy');
+Route::get('message/', 'MessagesController@index');
+Route::resource('messages', 'MessagesController');
