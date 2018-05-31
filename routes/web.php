@@ -1,5 +1,5 @@
 <?php
 
 
-Route::get('message/', 'MessagesController@index');
+Route::get('/', 'MessagesController@index');
 Route::resource('messages', 'MessagesController');
